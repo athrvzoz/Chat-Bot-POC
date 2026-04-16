@@ -57,9 +57,6 @@ def query_rag(query):
     if not rag_chain:
         return {"answer": "Error: Database not found. Please ingest a PDF first."}
         
-    try:
-        response = rag_chain.invoke({"input": query})
-        answer = response["answer"]
-        return {"answer": answer}
+
     except Exception as e:
         return {"answer": f"Error running LLM: {str(e)}\n\n(Did you start Ollama locally?)"}

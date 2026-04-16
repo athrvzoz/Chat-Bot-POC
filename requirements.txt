@@ -9,7 +9,7 @@ ollama
 pydantic
 langchain-core
 langchain-text-splitters
-flask
-flask-cors
-torch
-torchvision
+langchain-classic
+google-generativeai
+fastapi
+uvicorn
