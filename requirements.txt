@@ -1,0 +1,15 @@
+langchain
+langchain-community
+langchain-chroma
+chromadb
+sentence-transformers
+pymupdf
+streamlit
+ollama
+pydantic
+langchain-core
+langchain-text-splitters
+flask
+flask-cors
+torch
+torchvision

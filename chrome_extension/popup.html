@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Betway RAG Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="popup-header">
+      <div class="popup-logo">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="#fff">
+          <path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7v1H3v-1a7 7 0 017-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 012-2zM7.5 13a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm9 0a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM5 19h14a2 2 0 01-2 2H7a2 2 0 01-2-2z"/>
+        </svg>
+      </div>
+      <div>
+        <h1>Betway RAG Assistant</h1>
+        <p class="popup-version">v1.0.0 — All Regions</p>
+      </div>
+    </div>
+
+    <div class="popup-status" id="popup-status">
+      <div class="status-indicator" id="status-indicator"></div>
+      <span id="status-message">Checking server…</span>
+    </div>
+
+    <div class="popup-section">
+      <h2>Supported Regions</h2>
+      <div class="region-grid">
+        <button class="region-btn" data-url="https://www.betway.co.za/sport/soccer">🇿🇦 ZA</button>
+        <button class="region-btn" data-url="https://www.betway.com.gh/sport/soccer">🇬🇭 GH</button>
+        <button class="region-btn" data-url="https://www.betway.co.tz/sport/soccer">🇹🇿 TZ</button>
+        <button class="region-btn" data-url="https://www.betway.com.ng/sport/soccer">🇳🇬 NG</button>
+        <button class="region-btn" data-url="https://www.betway.co.zm/sport/soccer">🇿🇲 ZM</button>
+        <button class="region-btn" data-url="https://www.betway.co.mz/sport/soccer">🇲🇿 MZ</button>
+        <button class="region-btn" data-url="https://www.betway.co.mw/sport/soccer">🇲🇼 MW</button>
+        <button class="region-btn" data-url="https://www.betway.co.bw/sport/soccer">🇧🇼 BW</button>
+      </div>
+    </div>
+
+    <div class="popup-section">
+      <h2>How It Works</h2>
+      <ul>
+        <li>🟢 Navigate to any Betway regional site</li>
+        <li>💬 Click the green chat bubble on the page</li>
+        <li>🤖 Ask questions — AI uses your local docs</li>
+        <li>📍 The bot auto-detects which region you're on</li>
+      </ul>
+    </div>
+
+    <div class="popup-section">
+      <h2>Server Setup</h2>
+      <div class="code-block">
+        <code>cd ChatBot</code><br>
+        <code>python api.py</code>
+      </div>
+      <p class="popup-hint">Make sure Ollama is also running with <code>llama3.1</code></p>
+    </div>
+
+    <div class="popup-footer">
+      <button class="popup-btn" id="check-btn">🔄 Check Status</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
